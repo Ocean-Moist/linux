@@ -72,7 +72,7 @@ static const char *nvmet_trace_dsm(struct trace_seq *p, u8 *cdw10)
 
 	trace_seq_printf(p, "nr=%u, attributes=%u",
 			 get_unaligned_le32(cdw10),
-			 get_unaligned_le32(cdw10 + 4));
+			 get_unaligned_le32(cdw10 + 10));
 	trace_seq_putc(p, 0);
 
 	return ret;
